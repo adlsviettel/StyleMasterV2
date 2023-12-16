@@ -37,6 +37,7 @@ public class StyleMasterService {
                 "factoryAllocation",
                 "merAccountName",
                 "status",
+                "createdDate",
                 "totalRowNum");
         Contents contentsList = new Contents(pageNumber,
                 pageSize,
@@ -171,18 +172,32 @@ public class StyleMasterService {
     public ResponseAPI<?> searchOverView(String pStyleMasterCode,
                                          String pSeason,
                                          String pProductType,
+                                         String pFactoryAllocation,
                                          String pMerAccountName,
                                          String pFromDate,
                                          String pToDate,
                                          Integer pPageIndex,
                                          Integer pPageSize) {
-        var content = searchOverViewRepository.searchOverView(pStyleMasterCode, pSeason, pProductType, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
-        var headers = Arrays.asList("styleMasterCode", "season", "productType", "merAccountName", "createdDate");
+        var content = searchOverViewRepository.searchOverView(pStyleMasterCode, pSeason, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
+        var headers = Arrays.asList("id",
+                "styleMasterId",
+                "styleMasterCode",
+                "season",
+                "stage",
+                "optionNo",
+                "tacRouteNumber",
+                "a1aRouteNumber",
+                "productType",
+                "factoryAllocation",
+                "merAccountName",
+                "status",
+                "createdDate",
+                "totalRowNum");
         Contents contentList = new Contents(pPageIndex,
                 pPageSize,
                 content.get(0).getTotalRowNum(),
                 content.get(0).getTotalRowNum() / pPageSize,
                 content);
-        return new ResponseAPI<>(200, null, new TableResponseNon(headers, content));
+        return new ResponseAPI<>(200, null, new TableResponse(headers, contentList));
     }
 }

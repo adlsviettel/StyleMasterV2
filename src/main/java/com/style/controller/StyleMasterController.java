@@ -49,12 +49,13 @@ public class StyleMasterController {
     public ResponseAPI<?> searchOverView(@RequestParam String pStyleMasterCode,
                                          @RequestParam String pSeason,
                                          @RequestParam String pProductType,
+                                         @RequestParam String pFactoryAllocation,
                                          @RequestParam String pMerAccountName,
                                          @RequestParam String pFromDate,
                                          @RequestParam String pToDate,
                                          @RequestParam Integer pPageIndex,
                                          @RequestParam Integer pPageSize) {
         logger.info("Search Over View");
-        return styleMasterService.searchOverView(pStyleMasterCode, pSeason, pProductType, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
+        return styleMasterService.searchOverView(pStyleMasterCode, pSeason, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
     }
 }

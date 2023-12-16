@@ -19,7 +19,7 @@ public class GetOverView {
 
     @Id
     @Column(name = "StyleMasterId")
-    private int styleMasterId;
+    private Integer styleMasterId;
 
     @Column(name = "StyleMasterCode")
     private String styleMasterCode;
@@ -49,11 +49,11 @@ public class GetOverView {
     private String merAccountName;
 
     @Column(name = "Status")
-    private int status;
+    private Integer status;
 
     @Column(name = "CreatedDate")
     private Date createdDate;
 
     @Column(name = "TotalRowNum")
-    private int totalRowNum;
+    private Integer totalRowNum;
 }

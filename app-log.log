@@ -378,3 +378,351 @@ Caused by: java.lang.ClassNotFoundException: com.style.service.StyleMasterServic
 2023-12-16 11:10:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-12-16 11:10:54 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
 2023-12-16 11:10:54 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 11:24:49 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 9272 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 11:24:49 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 11:24:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-16 11:24:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-16 11:24:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 11:24:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
+2023-12-16 11:24:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 11:24:50 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 11:24:50 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 11:24:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 11:24:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 818 ms
+2023-12-16 11:24:50 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 11:24:50 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 11:24:50 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@5f708cd5
+2023-12-16 11:24:50 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 11:24:50 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 11:24:50 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 11:24:50 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 11:24:50 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 11:24:51 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 11:24:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 11:24:51 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 11:24:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 11:24:51 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 11:24:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 11:24:51 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 2.435 seconds (process running for 2.832)
+2023-12-16 11:24:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 11:24:54 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 11:24:54 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+2023-12-16 11:24:54 INFO  com.style.entity.GetOverView -Get All StyleMaster
+2023-12-16 11:25:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 11:25:16 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 11:25:16 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 11:25:19 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 10684 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 11:25:19 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 11:25:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-16 11:25:19 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-16 11:25:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 11:25:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2023-12-16 11:25:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 11:25:20 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 11:25:20 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 11:25:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 11:25:20 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 810 ms
+2023-12-16 11:25:20 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 11:25:20 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 11:25:20 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@4ac5c8da
+2023-12-16 11:25:20 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 11:25:20 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 11:25:20 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 11:25:20 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 11:25:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 11:25:21 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 11:25:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 11:25:21 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 11:25:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 11:25:21 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 11:25:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 11:25:21 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 2.509 seconds (process running for 2.877)
+2023-12-16 11:25:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 11:25:32 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 11:25:32 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 0 ms
+2023-12-16 11:25:32 INFO  com.style.entity.GetOverView -Get All StyleMaster
+2023-12-16 11:26:17 INFO  com.style.entity.GetOverView -Get StyleMaster Details
+2023-12-16 11:26:22 INFO  com.style.entity.GetOverView -Get Filter List
+2023-12-16 11:30:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 11:30:14 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 11:30:14 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 12:50:39 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 27948 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 12:50:39 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 12:50:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-16 12:50:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-16 12:50:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 12:50:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
+2023-12-16 12:50:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 12:50:40 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 12:50:40 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 12:50:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 12:50:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 825 ms
+2023-12-16 12:50:40 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 12:50:40 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 12:50:40 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@4ac5c8da
+2023-12-16 12:50:40 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 12:50:40 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 12:50:40 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 12:50:40 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 12:50:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 12:50:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 12:50:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:50:41 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 12:50:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 12:50:42 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 12:50:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 12:50:42 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 2.549 seconds (process running for 2.947)
+2023-12-16 12:51:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:51:40 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 12:51:40 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 12:51:42 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 16952 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 12:51:42 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 12:51:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-16 12:51:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-16 12:51:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 12:51:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+2023-12-16 12:51:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 12:51:42 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 12:51:42 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 12:51:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 12:51:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 729 ms
+2023-12-16 12:51:43 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 12:51:43 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 12:51:43 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@1d97f36e
+2023-12-16 12:51:43 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 12:51:43 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 12:51:43 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 12:51:43 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 12:51:43 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 12:51:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 12:51:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:51:43 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 12:51:44 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 12:51:44 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 12:51:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 12:51:44 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 2.31 seconds (process running for 2.677)
+2023-12-16 12:53:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:53:02 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 12:53:02 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 12:53:05 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 33188 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 12:53:05 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 12:53:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-16 12:53:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-16 12:53:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 12:53:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2023-12-16 12:53:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 12:53:06 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 12:53:06 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 12:53:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 12:53:06 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 774 ms
+2023-12-16 12:53:06 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 12:53:06 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 12:53:06 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@7b621f35
+2023-12-16 12:53:06 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 12:53:06 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 12:53:06 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 12:53:06 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 12:53:06 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 12:53:07 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 12:53:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:53:07 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 12:53:07 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 12:53:07 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 12:53:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 12:53:07 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 2.384 seconds (process running for 2.767)
+2023-12-16 12:53:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 12:53:43 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 12:53:43 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+2023-12-16 12:53:43 INFO  com.style.entity.GetOverView -Search Over View
+2023-12-16 12:53:43 WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Error: 0, SQLState: 07009
+2023-12-16 12:53:43 ERROR o.h.e.jdbc.spi.SqlExceptionHelper -Invalid column name FactoryAllication.
+2023-12-16 12:53:43 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: Unable to find column position by name: FactoryAllication [Invalid column name FactoryAllication.] [n/a]; SQL [n/a]]
+2023-12-16 12:55:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:55:14 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 12:55:14 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 12:55:15 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 8392 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 12:55:15 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 12:55:15 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-16 12:55:15 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-16 12:55:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 12:55:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
+2023-12-16 12:55:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 12:55:16 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 12:55:16 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 12:55:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 12:55:16 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 847 ms
+2023-12-16 12:55:16 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 12:55:16 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 12:55:16 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@2eb1ca9c
+2023-12-16 12:55:16 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 12:55:16 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 12:55:16 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 12:55:16 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 12:55:16 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 12:55:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 12:55:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:55:17 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 12:55:17 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 12:55:17 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 12:55:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 12:55:17 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 2.547 seconds (process running for 2.998)
+2023-12-16 12:55:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 12:55:20 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 12:55:20 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 0 ms
+2023-12-16 12:55:20 INFO  com.style.entity.GetOverView -Search Over View
+2023-12-16 12:55:20 WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Error: 0, SQLState: 07009
+2023-12-16 12:55:20 ERROR o.h.e.jdbc.spi.SqlExceptionHelper -Invalid column name FactoryAllication.
+2023-12-16 12:55:20 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: Unable to find column position by name: FactoryAllication [Invalid column name FactoryAllication.] [n/a]; SQL [n/a]]
+2023-12-16 12:57:04 INFO  com.style.entity.GetOverView -Get All StyleMaster
+2023-12-16 12:57:04 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-12-16 12:57:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:57:04 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 12:57:05 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 12:57:05 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 8392 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 12:57:05 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 12:57:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 7 ms. Found 5 JPA repository interfaces.
+2023-12-16 12:57:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 12:57:05 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 12:57:05 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 12:57:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 12:57:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 171 ms
+2023-12-16 12:57:05 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Starting...
+2023-12-16 12:57:05 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-2 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 12:57:05 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-2 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@4bac9957
+2023-12-16 12:57:05 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Start completed.
+2023-12-16 12:57:05 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 12:57:05 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 12:57:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 12:57:05 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 12:57:05 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 12:57:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 12:57:05 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 12:57:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 12:57:05 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 0.452 seconds (process running for 110.758)
+2023-12-16 12:57:05 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
+2023-12-16 12:57:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 12:57:08 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 12:57:08 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 0 ms
+2023-12-16 12:57:08 INFO  com.style.entity.GetOverView -Get All StyleMaster
+2023-12-16 13:00:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:00:54 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown initiated...
+2023-12-16 13:00:54 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown completed.
+2023-12-16 13:00:57 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 19376 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 13:00:57 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 13:00:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-16 13:00:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-16 13:00:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 13:00:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2023-12-16 13:00:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 13:00:58 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 13:00:58 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 13:00:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 13:00:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 879 ms
+2023-12-16 13:00:58 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 13:00:58 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 13:00:58 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@54b596b3
+2023-12-16 13:00:58 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 13:00:59 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 13:00:59 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 13:00:59 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 13:00:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 13:00:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 13:00:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:00:59 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 13:01:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 13:01:00 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 13:01:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 13:01:00 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 2.554 seconds (process running for 2.926)
+2023-12-16 13:01:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 13:01:02 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 13:01:02 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 0 ms
+2023-12-16 13:01:03 INFO  com.style.entity.GetOverView -Search Over View
+2023-12-16 13:02:53 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-12-16 13:02:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:02:53 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 13:02:53 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+2023-12-16 13:02:53 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 19376 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 13:02:53 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 13:02:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 13:02:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 8 ms. Found 5 JPA repository interfaces.
+2023-12-16 13:02:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 13:02:53 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 13:02:53 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 13:02:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 13:02:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 190 ms
+2023-12-16 13:02:53 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Starting...
+2023-12-16 13:02:53 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-2 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 13:02:53 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-2 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@47e764d5
+2023-12-16 13:02:53 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Start completed.
+2023-12-16 13:02:53 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 13:02:53 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 13:02:53 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 13:02:53 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 13:02:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:02:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 13:02:53 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 13:02:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 13:02:53 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 0.483 seconds (process running for 116.257)
+2023-12-16 13:02:53 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
+2023-12-16 13:02:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 13:02:54 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 13:02:54 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+2023-12-16 13:02:54 INFO  com.style.entity.GetOverView -Get StyleMaster Details
+2023-12-16 13:02:55 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-12-16 13:02:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:02:55 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown initiated...
+2023-12-16 13:02:55 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-2 - Shutdown completed.
+2023-12-16 13:02:55 INFO  com.style.StyleMasterV2Application -Starting StyleMasterV2Application using Java 21.0.1 with PID 19376 (D:\Transformation\StyleMasterV2\target\classes started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 13:02:55 INFO  com.style.StyleMasterV2Application -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 13:02:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 13:02:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 6 ms. Found 5 JPA repository interfaces.
+2023-12-16 13:02:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port 8180 (http)
+2023-12-16 13:02:55 INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2023-12-16 13:02:55 INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-16 13:02:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2023-12-16 13:02:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 135 ms
+2023-12-16 13:02:55 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Starting...
+2023-12-16 13:02:55 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-3 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 13:02:55 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-3 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@3b80fff9
+2023-12-16 13:02:55 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Start completed.
+2023-12-16 13:02:55 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 13:02:55 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 13:02:55 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 13:02:55 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 13:02:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:02:55 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 13:02:55 INFO  o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+2023-12-16 13:02:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port 8180 (http) with context path ''
+2023-12-16 13:02:55 INFO  com.style.StyleMasterV2Application -Started StyleMasterV2Application in 0.387 seconds (process running for 118.119)
+2023-12-16 13:02:55 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
+2023-12-16 13:02:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-16 13:02:58 INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2023-12-16 13:02:58 INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 0 ms
+2023-12-16 13:02:58 INFO  com.style.entity.GetOverView -Get StyleMaster Details
+2023-12-16 13:03:07 INFO  com.style.entity.GetOverView -Get Filter List
+2023-12-16 13:03:11 INFO  com.style.entity.GetOverView -Get Filter List
+2023-12-16 13:03:13 INFO  com.style.entity.GetOverView -Search Over View
+2023-12-16 13:03:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:03:25 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Shutdown initiated...
+2023-12-16 13:03:25 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-3 - Shutdown completed.
+2023-12-16 13:03:31 INFO  c.s.StyleMasterV2ApplicationTests -Starting StyleMasterV2ApplicationTests using Java 21.0.1 with PID 20620 (started by MSI in D:\Transformation\StyleMasterV2)
+2023-12-16 13:03:31 INFO  c.s.StyleMasterV2ApplicationTests -No active profile set, falling back to 1 default profile: "default"
+2023-12-16 13:03:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-16 13:03:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2023-12-16 13:03:32 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2023-12-16 13:03:32 INFO  com.zaxxer.hikari.pool.PoolBase -HikariPool-1 - Driver does not support get/set network timeout for connections. (null)
+2023-12-16 13:03:32 INFO  com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Added connection net.sourceforge.jtds.jdbc.JtdsConnection@13bdf540
+2023-12-16 13:03:32 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2023-12-16 13:03:32 INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-16 13:03:32 INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-16 13:03:32 INFO  o.h.c.i.RegionFactoryInitiator -HHH000026: Second-level cache disabled
+2023-12-16 13:03:33 INFO  o.s.o.j.p.SpringPersistenceUnitInfo -No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-16 13:03:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-16 13:03:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:03:34 INFO  o.s.d.j.r.query.QueryEnhancerFactory -Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-12-16 13:03:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-16 13:03:35 INFO  c.s.StyleMasterV2ApplicationTests -Started StyleMasterV2ApplicationTests in 3.726 seconds (process running for 4.36)
+2023-12-16 13:03:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-16 13:03:35 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2023-12-16 13:03:35 INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
