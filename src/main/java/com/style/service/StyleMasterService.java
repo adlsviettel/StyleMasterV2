@@ -22,8 +22,8 @@ public class StyleMasterService {
     private final SearchOverViewRepository searchOverViewRepository;
 
     @Transactional(readOnly = true)
-    public ResponseAPI<?> getStyleMasterByPage(Integer pageNumber, Integer pageSize) {
-        var content = styleMasterRepository.getOverview(pageNumber, pageSize);
+    public ResponseAPI<?> getStyleMasterByPage(Integer pageNumber, Integer pageSize, String pCustomerCode) {
+        var content = styleMasterRepository.getOverview(pageNumber, pageSize, pCustomerCode);
         var headers = Arrays.asList(
                 "id",
                 "styleMasterId",
@@ -171,6 +171,8 @@ public class StyleMasterService {
     @Transactional(readOnly = true)
     public ResponseAPI<?> searchOverView(String pStyleMasterCode,
                                          String pSeason,
+                                         String pStage,
+                                         String pCustomerCode,
                                          String pProductType,
                                          String pFactoryAllocation,
                                          String pMerAccountName,
@@ -178,7 +180,7 @@ public class StyleMasterService {
                                          String pToDate,
                                          Integer pPageIndex,
                                          Integer pPageSize) {
-        var content = searchOverViewRepository.searchOverView(pStyleMasterCode, pSeason, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
+        var content = searchOverViewRepository.searchOverView(pStyleMasterCode, pSeason, pStage, pCustomerCode, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
         var headers = Arrays.asList("id",
                 "styleMasterId",
                 "styleMasterCode",

@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface StyleMasterRepository extends JpaRepository<GetOverView, Integer> {
     //GetOverView
-    @Query(value = "{CALL sm.usp_StyleMaster_GetOverview(?,?)}", nativeQuery = true)
-    public List<GetOverView> getOverview(Integer pPageIndex, Integer pPageSize);
+    @Query(value = "{CALL sm.usp_StyleMaster_GetOverview(?,?,?)}", nativeQuery = true)
+    public List<GetOverView> getOverview(Integer pPageIndex, Integer pPageSize,String pCustomerCode);
 }

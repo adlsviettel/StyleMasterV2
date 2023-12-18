@@ -18,9 +18,9 @@ public class StyleMasterController {
     private static final Logger logger = LoggerFactory.getLogger(GetOverView.class);
 
     @GetMapping
-    public ResponseAPI<?> getAllStyleMaster(@RequestParam int pPageIndex, @RequestParam int pPageSize) {
+    public ResponseAPI<?> getAllStyleMaster(@RequestParam Integer pPageIndex, @RequestParam Integer pPageSize, @RequestParam String pCustomerCode) {
         logger.info("Get All StyleMaster");
-        return styleMasterService.getStyleMasterByPage(pPageIndex, pPageSize);
+        return styleMasterService.getStyleMasterByPage(pPageIndex, pPageSize, pCustomerCode);
     }
 
     @GetMapping("/style_details")
@@ -48,6 +48,8 @@ public class StyleMasterController {
     @GetMapping("/search_over_view")
     public ResponseAPI<?> searchOverView(@RequestParam String pStyleMasterCode,
                                          @RequestParam String pSeason,
+                                         @RequestParam String pStage,
+                                         @RequestParam String pCustomerCode,
                                          @RequestParam String pProductType,
                                          @RequestParam String pFactoryAllocation,
                                          @RequestParam String pMerAccountName,
@@ -56,6 +58,6 @@ public class StyleMasterController {
                                          @RequestParam Integer pPageIndex,
                                          @RequestParam Integer pPageSize) {
         logger.info("Search Over View");
-        return styleMasterService.searchOverView(pStyleMasterCode, pSeason, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
+        return styleMasterService.searchOverView(pStyleMasterCode, pSeason, pStage, pCustomerCode, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
     }
 }
