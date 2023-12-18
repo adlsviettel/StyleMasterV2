@@ -30,9 +30,9 @@ public class StyleMasterController {
     }
 
     @GetMapping("/get_filter")
-    public ResponseAPI<?> getFilterList() {
+    public ResponseAPI<?> getFilterList(@RequestParam String pCustomerCode) {
         logger.info("Get Filter List");
-        return styleMasterService.getFilterList();
+        return styleMasterService.getFilterList(pCustomerCode);
     }
 
     @PostMapping("/insert_update_style")

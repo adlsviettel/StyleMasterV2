@@ -10,6 +10,6 @@ import java.util.List;
 
 @Repository
 public interface GetFilterRepository extends JpaRepository<GetFilter, Integer> {
-    @Query(value = "{CALL sm.usp_StyleMaster_GetFilter}", nativeQuery = true)
-    public List<GetFilter> getFilterList();
+    @Query(value = "{CALL sm.usp_StyleMaster_GetFilter(?)}", nativeQuery = true)
+    public List<GetFilter> getFilterList(String pCustomerCode);
 }

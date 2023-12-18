@@ -99,8 +99,8 @@ public class StyleMasterService {
     }
 
     @Transactional(readOnly = true)
-    public ResponseAPI<?> getFilterList() {
-        var content = getFilterRepository.getFilterList();
+    public ResponseAPI<?> getFilterList(String pCustomerCode) {
+        var content = getFilterRepository.getFilterList(pCustomerCode);
         var headers = Arrays.asList("id", "columnName", "value");
         return new ResponseAPI<>(200, null, new TableResponseNon(headers, content));
     }
