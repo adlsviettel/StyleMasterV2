@@ -1,12 +1,15 @@
 package com.style.service;
 
 import com.style.ResponseAPI;
+import com.style.entity.GetOverView;
 import com.style.entity.InsertStyleMaster;
 import com.style.model.Contents;
 import com.style.model.TableResponse;
 import com.style.model.TableResponseNon;
 import com.style.repository.*;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,6 +23,8 @@ public class StyleMasterService {
     private final GetFilterRepository getFilterRepository;
     private final InsertStyleMasterRepository insertStyleMasterRepository;
     private final SearchOverViewRepository searchOverViewRepository;
+
+    private static final Logger logger = LoggerFactory.getLogger(GetOverView.class);
 
     @Transactional(readOnly = true)
     public ResponseAPI<?> getStyleMasterByPage(Integer pageNumber, Integer pageSize, String pCustomerCode) {
@@ -44,7 +49,10 @@ public class StyleMasterService {
                 content.get(0).getTotalRowNum(),
                 content.get(0).getTotalRowNum() / pageSize,
                 content);
-
+        logger.info("Get Style Master");
+        for (int i = 0; i < content.size(); i++) {
+            logger.info(content.get(i).toString() + "\n");
+        }
         return new ResponseAPI<>(200, null, new TableResponse(headers, contentsList) {
         });
     }
@@ -181,7 +189,8 @@ public class StyleMasterService {
                                          Integer pPageIndex,
                                          Integer pPageSize) {
         var content = searchOverViewRepository.searchOverView(pStyleMasterCode, pSeason, pStage, pCustomerCode, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
-        var headers = Arrays.asList("id",
+        var headers = Arrays.asList(
+                "id",
                 "styleMasterId",
                 "styleMasterCode",
                 "season",

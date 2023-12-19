@@ -15,23 +15,19 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*")
 public class StyleMasterController {
     private final StyleMasterService styleMasterService;
-    private static final Logger logger = LoggerFactory.getLogger(GetOverView.class);
 
     @GetMapping
     public ResponseAPI<?> getAllStyleMaster(@RequestParam Integer pPageIndex, @RequestParam Integer pPageSize, @RequestParam String pCustomerCode) {
-        logger.info("Get All StyleMaster");
         return styleMasterService.getStyleMasterByPage(pPageIndex, pPageSize, pCustomerCode);
     }
 
     @GetMapping("/style_details")
     public ResponseAPI<?> getStyleMasterDetailByStyleMasterId(@RequestParam Integer pStyleMasterId) {
-        logger.info("Get StyleMaster Details");
         return styleMasterService.getStyleMasterDetailByStyleMasterId(pStyleMasterId);
     }
 
     @GetMapping("/get_filter")
     public ResponseAPI<?> getFilterList(@RequestParam String pCustomerCode) {
-        logger.info("Get Filter List");
         return styleMasterService.getFilterList(pCustomerCode);
     }
 
@@ -40,8 +36,6 @@ public class StyleMasterController {
                                                   @RequestParam Integer pAction,
                                                   @RequestParam Integer pCreatedBy,
                                                   @RequestParam Integer pOutput) {
-        logger.info("Config StyleMaster !!!!!");
-        logger.info(jSonStyleMaster.toString());
         return styleMasterService.insertUpdateStyleMaster(jSonStyleMaster, pAction, pCreatedBy, pOutput);
     }
 
@@ -57,7 +51,6 @@ public class StyleMasterController {
                                          @RequestParam String pToDate,
                                          @RequestParam Integer pPageIndex,
                                          @RequestParam Integer pPageSize) {
-        logger.info("Search Over View");
         return styleMasterService.searchOverView(pStyleMasterCode, pSeason, pStage, pCustomerCode, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
     }
 }
