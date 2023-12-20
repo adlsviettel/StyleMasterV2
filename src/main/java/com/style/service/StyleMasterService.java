@@ -38,7 +38,7 @@ public class StyleMasterService {
                 content);
         logger.info("Get Style Master");
         for (int i = 0; i < content.size(); i++) {
-            logger.info(content.get(i).toString() + "\n");
+            logger.info(content.get(i).toString() + "\n\n");
         }
         return new ResponseAPI<>(200, null, new TableResponse(headers, contentsList) {
         });
