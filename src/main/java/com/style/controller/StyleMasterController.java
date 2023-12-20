@@ -3,6 +3,7 @@ package com.style.controller;
 import com.style.ResponseAPI;
 import com.style.entity.GetOverView;
 import com.style.entity.InsertStyleMaster;
+import com.style.entity.SearchBodyOverView;
 import com.style.service.StyleMasterService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -40,17 +41,7 @@ public class StyleMasterController {
     }
 
     @GetMapping("/search_over_view")
-    public ResponseAPI<?> searchOverView(@RequestParam String pStyleMasterCode,
-                                         @RequestParam String pSeason,
-                                         @RequestParam String pStage,
-                                         @RequestParam String pCustomerCode,
-                                         @RequestParam String pProductType,
-                                         @RequestParam String pFactoryAllocation,
-                                         @RequestParam String pMerAccountName,
-                                         @RequestParam String pFromDate,
-                                         @RequestParam String pToDate,
-                                         @RequestParam Integer pPageIndex,
-                                         @RequestParam Integer pPageSize) {
-        return styleMasterService.searchOverView(pStyleMasterCode, pSeason, pStage, pCustomerCode, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
+    public ResponseAPI<?> searchOverView(SearchBodyOverView searchBodyOverView) {
+        return styleMasterService.searchOverView(searchBodyOverView);
     }
 }

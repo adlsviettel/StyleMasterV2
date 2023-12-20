@@ -1,8 +1,8 @@
 package com.style.service;
 
+import com.style.HeaderTableHelper;
 import com.style.ResponseAPI;
-import com.style.entity.GetOverView;
-import com.style.entity.InsertStyleMaster;
+import com.style.entity.*;
 import com.style.model.Contents;
 import com.style.model.TableResponse;
 import com.style.model.TableResponseNon;
@@ -29,21 +29,8 @@ public class StyleMasterService {
     @Transactional(readOnly = true)
     public ResponseAPI<?> getStyleMasterByPage(Integer pageNumber, Integer pageSize, String pCustomerCode) {
         var content = styleMasterRepository.getOverview(pageNumber, pageSize, pCustomerCode);
-        var headers = Arrays.asList(
-                "id",
-                "styleMasterId",
-                "styleMasterCode",
-                "season",
-                "stage",
-                "optionNo",
-                "tacRouteNumber",
-                "a1aRouteNumber",
-                "productType",
-                "factoryAllocation",
-                "merAccountName",
-                "status",
-                "createdDate",
-                "totalRowNum");
+        HeaderTableHelper<GetOverView> headerTableHelper = new HeaderTableHelper<>();
+        var headers = headerTableHelper.getHeaders(new GetOverView());
         Contents contentsList = new Contents(pageNumber,
                 pageSize,
                 content.get(0).getTotalRowNum(),
@@ -60,56 +47,16 @@ public class StyleMasterService {
     @Transactional(readOnly = true)
     public ResponseAPI<?> getStyleMasterDetailByStyleMasterId(Integer styleMasterId) {
         var content = styleMasterDetailRepository.getDetailByStyleMasterId(styleMasterId);
-        var headers = Arrays.asList(
-                "styleMasterId",
-                "styleMasterCode",
-                "season",
-                "stage",
-                "optionNo",
-                "customerPatternCode",
-                "tacRouteNumber",
-                "a1aRouteNumber",
-                "productType",
-                "factoryAllocation",
-                "merAccountName",
-                "status",
-                "cuttingSMV",
-                "sewing",
-                "inspect",
-                "press",
-                "finishing",
-                "totalSIPFSMV",
-                "bondingProcess",
-                "bondingPosition",
-                "bondingTotalSMV",
-                "laserPosition",
-                "laserTotalSMV",
-                "totalBondingSMV",
-                "htSmall",
-                "htBig",
-                "htTotalPosition",
-                "htEmbroideryBacking",
-                "embPosition",
-                "embBadgeLogo",
-                "embTotalStitch",
-                "embTotalSMV",
-                "padPrintPosition",
-                "padPrintTotalSMV",
-                "screenPrintPosition",
-                "screenPrintPrinter",
-                "sublimationPosition",
-                "sublimationPrinter",
-                "bondingItem",
-                "screenPrintItem",
-                "screenSublimationItem"
-        );
+        HeaderTableHelper<StyleMasterDetail> headerTableHelper = new HeaderTableHelper<>();
+        var headers = headerTableHelper.getHeaders(new StyleMasterDetail());
         return new ResponseAPI<>(200, null, new TableResponseNon(headers, content));
     }
 
     @Transactional(readOnly = true)
     public ResponseAPI<?> getFilterList(String pCustomerCode) {
         var content = getFilterRepository.getFilterList(pCustomerCode);
-        var headers = Arrays.asList("id", "columnName", "value");
+        HeaderTableHelper<GetFilter> headerTableHelper = new HeaderTableHelper<>();
+        var headers = headerTableHelper.getHeaders(new GetFilter());
         return new ResponseAPI<>(200, null, new TableResponseNon(headers, content));
     }
 
@@ -117,59 +64,33 @@ public class StyleMasterService {
                                                   Integer pAction,
                                                   Integer pCreatedBy,
                                                   Integer pOutput) {
-        InsertStyleMaster styleMaster = new InsertStyleMaster();
-        styleMaster.setId(pJSonStyleMaster.getId());
-        styleMaster.setStyleMasterCode(pJSonStyleMaster.getStyleMasterCode());
-        styleMaster.setStage(pJSonStyleMaster.getStage());
-        styleMaster.setOptionNo(pJSonStyleMaster.getOptionNo());
-        styleMaster.setTacRouteNumber(pJSonStyleMaster.getTacRouteNumber());
-        styleMaster.setA1aRouteNumber(pJSonStyleMaster.getA1aRouteNumber());
-        styleMaster.setProductType(pJSonStyleMaster.getProductType());
-        styleMaster.setFactoryAllocation(pJSonStyleMaster.getFactoryAllocation());
-        styleMaster.setMerAccountName(pJSonStyleMaster.getMerAccountName());
-        styleMaster.setStatus(pJSonStyleMaster.getStatus());
-        styleMaster.setCuttingSMV(pJSonStyleMaster.getCuttingSMV());
-        styleMaster.setSewing(pJSonStyleMaster.getSewing());
-        styleMaster.setInspect(pJSonStyleMaster.getInspect());
-        styleMaster.setPress(pJSonStyleMaster.getPress());
-        styleMaster.setFinishing(pJSonStyleMaster.getFinishing());
-        styleMaster.setTotalSIPFSMV(pJSonStyleMaster.getTotalSIPFSMV());
-        styleMaster.setBondingProcess(pJSonStyleMaster.getBondingProcess());
-        styleMaster.setHtSmall(pJSonStyleMaster.getHtSmall());
-        styleMaster.setHtTotalPosition(pJSonStyleMaster.getHtTotalPosition());
-        styleMaster.setPadPrintPosition(pJSonStyleMaster.getPadPrintPosition());
-        styleMaster.setPadPrintTotalSMV(pJSonStyleMaster.getPadPrintTotalSMV());
-        styleMaster.setScreenPrintPosition(pJSonStyleMaster.getScreenPrintPosition());
-        styleMaster.setScreenPrintPrinter(pJSonStyleMaster.getScreenPrintPrinter());
-        styleMaster.setSublimationPrinter(pJSonStyleMaster.getSublimationPrinter());
-
         String xmlString = "<root>" +
                 "  <row>" +
-                "    <StyleMasterId>" + styleMaster.getId() + "</StyleMasterId>" +
-                "    <StyleMasterCode>" + styleMaster.getStyleMasterCode() + "</StyleMasterCode>" +
-                "    <Season>" + styleMaster.getSeason() + "</Season>" +
-                "    <Stage>" + styleMaster.getStage() + "</Stage>" +
-                "    <OptionNo>" + styleMaster.getOptionNo() + "</OptionNo>" +
-                "    <TACRouteNumber>" + styleMaster.getTacRouteNumber() + "</TACRouteNumber>" +
-                "    <A1ARouteNumber>" + styleMaster.getA1aRouteNumber() + "</A1ARouteNumber>" +
-                "    <ProductType>" + styleMaster.getProductType() + "</ProductType>" +
-                "    <FactoryAllocation>" + styleMaster.getFactoryAllocation() + "</FactoryAllocation>" +
-                "    <MerAccountName>" + styleMaster.getMerAccountName() + "</MerAccountName>" +
-                "    <Status>" + styleMaster.getStatus() + "</Status>" +
-                "    <CuttingSMV>" + styleMaster.getCuttingSMV() + "</CuttingSMV>" +
-                "    <Sewing>" + styleMaster.getSewing() + "</Sewing>" +
-                "    <Inspect>" + styleMaster.getInspect() + "</Inspect>" +
-                "    <Press>" + styleMaster.getPress() + "</Press>" +
-                "    <Finishing>" + styleMaster.getFinishing() + "</Finishing>" +
-                "    <TotalSIPFSMV>" + styleMaster.getTotalSIPFSMV() + "</TotalSIPFSMV>" +
-                "    <BondingProcess>" + styleMaster.getBondingProcess() + "</BondingProcess>" +
-                "    <HTSmall>" + styleMaster.getHtSmall() + "</HTSmall>" +
-                "    <HTTotalPosition>" + styleMaster.getHtTotalPosition() + "</HTTotalPosition>" +
-                "    <PadPrintPosition>" + styleMaster.getPadPrintPosition() + "</PadPrintPosition>" +
-                "    <PadPrintTotalSMV>" + styleMaster.getPadPrintTotalSMV() + "</PadPrintTotalSMV>" +
-                "    <ScreenPrintPosition>" + styleMaster.getScreenPrintPosition() + "</ScreenPrintPosition>" +
-                "    <ScreenPrintPrinter>" + styleMaster.getScreenPrintPrinter() + "</ScreenPrintPrinter>" +
-                "    <SublimationPrinter>" + styleMaster.getSublimationPrinter() + "</SublimationPrinter>" +
+                "    <StyleMasterId>" + pJSonStyleMaster.getId() + "</StyleMasterId>" +
+                "    <StyleMasterCode>" + pJSonStyleMaster.getStyleMasterCode() + "</StyleMasterCode>" +
+                "    <Season>" + pJSonStyleMaster.getSeason() + "</Season>" +
+                "    <Stage>" + pJSonStyleMaster.getStage() + "</Stage>" +
+                "    <OptionNo>" + pJSonStyleMaster.getOptionNo() + "</OptionNo>" +
+                "    <TACRouteNumber>" + pJSonStyleMaster.getTacRouteNumber() + "</TACRouteNumber>" +
+                "    <A1ARouteNumber>" + pJSonStyleMaster.getA1aRouteNumber() + "</A1ARouteNumber>" +
+                "    <ProductType>" + pJSonStyleMaster.getProductType() + "</ProductType>" +
+                "    <FactoryAllocation>" + pJSonStyleMaster.getFactoryAllocation() + "</FactoryAllocation>" +
+                "    <MerAccountName>" + pJSonStyleMaster.getMerAccountName() + "</MerAccountName>" +
+                "    <Status>" + pJSonStyleMaster.getStatus() + "</Status>" +
+                "    <CuttingSMV>" + pJSonStyleMaster.getCuttingSMV() + "</CuttingSMV>" +
+                "    <Sewing>" + pJSonStyleMaster.getSewing() + "</Sewing>" +
+                "    <Inspect>" + pJSonStyleMaster.getInspect() + "</Inspect>" +
+                "    <Press>" + pJSonStyleMaster.getPress() + "</Press>" +
+                "    <Finishing>" + pJSonStyleMaster.getFinishing() + "</Finishing>" +
+                "    <TotalSIPFSMV>" + pJSonStyleMaster.getTotalSIPFSMV() + "</TotalSIPFSMV>" +
+                "    <BondingProcess>" + pJSonStyleMaster.getBondingProcess() + "</BondingProcess>" +
+                "    <HTSmall>" + pJSonStyleMaster.getHtSmall() + "</HTSmall>" +
+                "    <HTTotalPosition>" + pJSonStyleMaster.getHtTotalPosition() + "</HTTotalPosition>" +
+                "    <PadPrintPosition>" + pJSonStyleMaster.getPadPrintPosition() + "</PadPrintPosition>" +
+                "    <PadPrintTotalSMV>" + pJSonStyleMaster.getPadPrintTotalSMV() + "</PadPrintTotalSMV>" +
+                "    <ScreenPrintPosition>" + pJSonStyleMaster.getScreenPrintPosition() + "</ScreenPrintPosition>" +
+                "    <ScreenPrintPrinter>" + pJSonStyleMaster.getScreenPrintPrinter() + "</ScreenPrintPrinter>" +
+                "    <SublimationPrinter>" + pJSonStyleMaster.getSublimationPrinter() + "</SublimationPrinter>" +
                 "  </row>" +
                 "</root>";
         insertStyleMasterRepository.insertUpdateStyleMaster(xmlString, pAction, pCreatedBy, pOutput);
@@ -177,37 +98,25 @@ public class StyleMasterService {
     }
 
     @Transactional(readOnly = true)
-    public ResponseAPI<?> searchOverView(String pStyleMasterCode,
-                                         String pSeason,
-                                         String pStage,
-                                         String pCustomerCode,
-                                         String pProductType,
-                                         String pFactoryAllocation,
-                                         String pMerAccountName,
-                                         String pFromDate,
-                                         String pToDate,
-                                         Integer pPageIndex,
-                                         Integer pPageSize) {
-        var content = searchOverViewRepository.searchOverView(pStyleMasterCode, pSeason, pStage, pCustomerCode, pProductType, pFactoryAllocation, pMerAccountName, pFromDate, pToDate, pPageIndex, pPageSize);
-        var headers = Arrays.asList(
-                "id",
-                "styleMasterId",
-                "styleMasterCode",
-                "season",
-                "stage",
-                "optionNo",
-                "tacRouteNumber",
-                "a1aRouteNumber",
-                "productType",
-                "factoryAllocation",
-                "merAccountName",
-                "status",
-                "createdDate",
-                "totalRowNum");
-        Contents contentList = new Contents(pPageIndex,
-                pPageSize,
+    public ResponseAPI<?> searchOverView(SearchBodyOverView searchBodyOverView) {
+        var content = searchOverViewRepository.searchOverView(
+                searchBodyOverView.getPStyleMasterCode(),
+                searchBodyOverView.getPSeason(),
+                searchBodyOverView.getPStage(),
+                searchBodyOverView.getPCustomerCode(),
+                searchBodyOverView.getPProductType(),
+                searchBodyOverView.getPFactoryAllocation(),
+                searchBodyOverView.getPMerAccountName(),
+                searchBodyOverView.getPFromDate(),
+                searchBodyOverView.getPToDate(),
+                searchBodyOverView.getPPageIndex(),
+                searchBodyOverView.getPPageSize());
+        HeaderTableHelper<GetOverView> headerTableHelper = new HeaderTableHelper<>();
+        var headers = headerTableHelper.getHeaders(new GetOverView());
+        Contents contentList = new Contents(searchBodyOverView.getPPageIndex(),
+                searchBodyOverView.getPPageSize(),
                 content.get(0).getTotalRowNum(),
-                content.get(0).getTotalRowNum() / pPageSize,
+                content.get(0).getTotalRowNum() / searchBodyOverView.getPPageSize(),
                 content);
         return new ResponseAPI<>(200, null, new TableResponse(headers, contentList));
     }
