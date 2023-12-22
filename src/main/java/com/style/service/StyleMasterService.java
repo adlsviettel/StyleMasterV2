@@ -10,6 +10,7 @@ import com.style.repository.*;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,6 +27,7 @@ public class StyleMasterService {
 
     private static final Logger logger = LoggerFactory.getLogger(GetOverView.class);
 
+    @Cacheable(value = "styleMasterByPage", key = "{#pageNumber,#pageSize,#pCustomerCode}")
     @Transactional(readOnly = true)
     public ResponseAPI<?> getStyleMasterByPage(Integer pageNumber, Integer pageSize, String pCustomerCode) {
         var content = styleMasterRepository.getOverview(pageNumber, pageSize, pCustomerCode);
@@ -40,8 +42,7 @@ public class StyleMasterService {
         for (int i = 0; i < content.size(); i++) {
             logger.info(content.get(i).toString() + "\n");
         }
-        return new ResponseAPI<>(200, null, new TableResponse(headers, contentsList) {
-        });
+        return new ResponseAPI<>(200, null, new TableResponse(headers, contentsList));
     }
 
     @Transactional(readOnly = true)
